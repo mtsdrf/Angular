@@ -1,0 +1,43 @@
+->cria novo projeto
+ng new nome_projeto
+
+->entra no projeto 
+cd nome_projeto
+
+->sobe servidor angular
+ng serve --open
+
+->instalar bootstrap v4.2.1
+npm install bootstrap@4.2.1
+
+modulos baixados vão pra node_modules/...
+pra importar css e js em todos os arquivos html do projeto add os caminhos dos arquivos nos arrays dentro do arquivo
+angular.json em projects[curso[architect[build[options]]]]
+
+CRIAR NOVO COMPONENTE
+
+1- Cria pasta com nome do componente dentro de scr/app
+2- Cria um arquivo com nome.component.ts
+3- Cria um arquivo com nome.component.html
+
+abre o arquivo .ts e insere
+
+-------------------------------------------------------------
+import { Component } from "@angular/core";
+
+@Component({
+    
+})
+
+export class PhotoComponent{
+    Aqui vão todos os atributos
+}
+-------------------------------------------------------------
+
+Adicione o componente no modulo da aplicação no array declarations no file app/app.module.ts
+
+declarations: [
+    AppComponent,
+    PhotoComponent
+]
+
