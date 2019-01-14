@@ -1,2 +1,5 @@
-<ca-photo url="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sultan_the_Barbary_Lion.jpg/440px-Sultan_the_Barbary_Lion.jpg" desc="Leão"></ca-photo>
-<ca-photo url="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lioness_Etosha_NP.jpg/500px-Lioness_Etosha_NP.jpg" alt="Leoa"></ca-photo>
+<ca-photo 
+    *ngFor="let photo of photos"
+    [url]="photo.url"
+    [desc]="photo.desc">
+</ca-photo>
